@@ -25,3 +25,4 @@ jobs:
           sudo apt update && sudo apt full-upgrade
           sudo apt install python-is-python3
           pip3 install --upgrade pip
+          pip3 install flask
