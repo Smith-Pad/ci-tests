@@ -22,13 +22,5 @@ jobs:
       options: --privileged
     steps:
       - uses: actions/checkout@v4
-      - run: pwd
-      - run: find .
-      - run: cat /etc/os-release
       - run: pacman-key --init
       - run: pacman --noconfirm -Sy archlinux-keyring
-      - run: ./build_iso.sh
-      - uses: actions/upload-artifact@v3
-        with:
-          name: Arch Live ISO
-          path: /tmp/archlive/out/*.iso
