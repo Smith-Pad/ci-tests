@@ -26,3 +26,4 @@ jobs:
           sudo apt install docker -y
           sudo apt install podman -y
           docker pull archlinux
+          docker run -it --rm archlinux/base:latest sh -c "pacman -Syyu && exec /bin/bash"
