@@ -23,4 +23,5 @@ jobs:
       - name: archiso build tests
         run: |
           sudo apt update && sudo apt full-upgrade
-          sudo apt install docker
+          sudo apt install docker -y
+          sudo apt install podman -y
