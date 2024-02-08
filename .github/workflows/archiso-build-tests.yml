@@ -25,3 +25,4 @@ jobs:
           sudo apt update && sudo apt full-upgrade
           sudo apt install docker -y
           sudo apt install podman -y
+          docker pull archlinux
