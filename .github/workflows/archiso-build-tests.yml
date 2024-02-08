@@ -24,3 +24,4 @@ jobs:
       - uses: actions/checkout@v4
       - run: pacman-key --init
       - run: pacman --noconfirm -Sy archlinux-keyring
+      - run: pacman -Syyu --noconfirm
